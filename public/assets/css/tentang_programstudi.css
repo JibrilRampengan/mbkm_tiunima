@@ -1,0 +1,551 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Secular+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Gayakan navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 8px;
+}
+
+/* Gaya logo */
+.navbar-logo img {
+  height: auto;
+}
+
+/* Gaya menu navbar */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar-menu li a:hover {
+  color: #0008fc;
+}
+
+/* Gaya tombol login */
+.navbar-buttons .login-button {
+  padding: 8px 16px;
+  background-color: #0008fc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-buttons .login-button:hover {
+  background-color: #0309bf;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-menu li {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-logo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .navbar-buttons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-buttons .login-button {
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .navbar-menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .login-button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+#navigation-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 20px;
+  height: 575px;
+  background: linear-gradient(to right, #070056, #000000);
+}
+
+#navigation-bg-container {
+  width: 55%;
+}
+
+#navigation-bg-container svg {
+  width: 95%;
+  height: 90%;
+  margin-left: 85px;
+}
+
+#navigation-content-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#navigation-content-container h1 {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 0.9em;
+  margin-bottom: 30px;
+  color: #fb830b;
+}
+
+#navigation-content-container p {
+  font-weight: 500;
+  line-height: 1.8em;
+  color: #f2f2f2;
+}
+
+#navigation-content-container button {
+  color: #fcfcfc;
+  background: #0309bf;
+  padding: 16px 0px;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+  margin-top: 30px;
+  font-size: 16px;
+  width: 160px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#navigation-content-container button:hover {
+  opacity: 0.8;
+  color: #030303;
+  background: #fb830b;
+}
+
+/* Gaya Responsif */
+
+@media screen and (max-width: 768px) {
+  #navigation-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #navigation-bg-container {
+    width: 100%;
+  }
+
+  #navigation-bg-container svg {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  #navigation-content-container {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #avigation-content-container h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  #navigation-content-container p {
+    font-size: 14px;
+  }
+
+  #navigation-content-container button {
+    width: 140px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#about {
+  padding: 50px 0;
+  text-align: justify;
+}
+
+#about .holder {
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: -15px;
+  padding: 0 20px;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Secular One", sans-serif;
+}
+
+#about .underline {
+  color: #1100ca;
+  position: relative;
+}
+
+#about .underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+  background-color: #1100ca;
+}
+
+#about .description {
+  color: #070707;
+  margin-top: 20px;
+  font-family: "poppins", sans-serif;
+}
+
+#about .description h3 {
+  color: #1100ca;
+  font-size: 24px;
+}
+#about .description p {
+  font-size: 18px;
+  line-height: 2;
+  font-family: "poppins", sans-serif;
+}
+
+#about .divider {
+  margin-top: 10px;
+  border: none;
+  border-top: 1px solid #1100ca;
+}
+
+#about .description ul {
+  padding-left: 20px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 768px) {
+  #about .holder {
+    padding: 20px;
+  }
+
+  #about h2 {
+    font-size: 28px;
+  }
+
+  #about .description p {
+    font-size: 16px;
+  }
+}
+
+#profil-lulusan {
+  padding: 20px 0;
+  background: linear-gradient(to right, #070056, #000000);
+}
+
+#profil-lulusan .container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+#profil-lulusan h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fffcfc;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#profil-lulusan p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#profil-lulusan .profiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+#profil-lulusan .profile {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+#profil-lulusan .profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#profil-lulusan .profile h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0404f9;
+  margin-bottom: 10px;
+}
+
+#profil-lulusan .profile p {
+  font-size: 16px;
+  color: #161616;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  #profil-lulusan .profiles {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+.team-section {
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.team-card {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.team-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97.2%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.team-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.member-name {
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.member-position {
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer {
+  background: linear-gradient(to right, #070056, #000000);
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  flex-basis: 25%;
+}
+
+.logo img {
+  max-width: 50%;
+  margin-left: 20px;
+}
+
+.footer-subheading {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.footer-column {
+  flex-basis: 25%;
+}
+
+.footer-heading {
+  margin-left: 0px;
+  text-align: left;
+  font-weight: bold;
+  color: #ffbf00;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  margin-bottom: 30px;
+}
+
+.footer-menu li {
+  margin-left: 0px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.footer-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  margin-bottom: 30px;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-column {
+    margin-bottom: 30px;
+  }
+
+  .footer-heading {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-menu li {
+    text-align: center;
+    margin-left: 0;
+  }
+}

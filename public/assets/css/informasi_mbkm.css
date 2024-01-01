@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Secular+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #070056;
+}
+
+/* Gaya navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 8px;
+}
+
+/* Gaya logo */
+.navbar-logo img {
+  height: auto;
+}
+
+/* Gaya menu navbar */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.navbar-menu li {
+  margin-right: 25px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.navbar-menu li a:hover {
+  color: #0008fc;
+}
+
+/* Gaya tombol login */
+.navbar-buttons .login-button {
+  padding: 8px 16px;
+  background-color: #0008fc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-buttons .login-button:hover {
+  background-color: #0008fc;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-menu li {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-logo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .navbar-buttons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-buttons .login-button {
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .navbar-menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .login-button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+/* Header styles */
+.hero {
+  height: 20vh;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  color: #ff9900;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Tabs styles */
+.tabs-container {
+  max-width: 1295px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 2px 4px #000000;
+  border-radius: 0px;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.tabs-menu {
+  background-color: #060606;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab-btn {
+  padding: 15px 20px;
+  font-size: 13px;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.tab-btn:hover {
+  background-color: #f7f7f7;
+  color: #ff9900;
+}
+
+.tab-btn.active {
+  color: #ff9900;
+  border-bottom: 3px solid #ff9900;
+}
+
+.tabs-content {
+  padding: 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ol.sejajar {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-left: 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  margin: 25px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card-description {
+  text-align: center;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .tabs-menu {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    padding: 15px 20px;
+    width: 100%;
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  .tab-content.active {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
